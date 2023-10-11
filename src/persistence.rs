@@ -1,7 +1,7 @@
 use serde::{Serialize, Deserialize};
-use crate::magazine::Magazine;
-use crate::reader::Reader;
+use crate::book::Magazine;
 use crate::book::Book;
+use crate::reader::Reader;
 
 #[derive(Serialize, Deserialize)]
 struct DataToSave {

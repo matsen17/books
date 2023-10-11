@@ -2,6 +2,7 @@ use std::str::FromStr;
 pub enum Command {
     AddBook,
     ListBooks,
+    ListMagazines,
     RemoveBook,
     AddReader,
     BorrowBookForUser,
@@ -18,6 +19,7 @@ impl FromStr for Command {
         match input {
             "addbook" => Ok(Command::AddBook),
             "listbooks" => Ok(Command::ListBooks),
+            "listmagazines" => Ok(Command::ListMagazines),
             "removebook" => Ok(Command::RemoveBook),
             "adduser" => Ok(Command::AddReader),
             "borrowbook" => Ok(Command::BorrowBookForUser),
